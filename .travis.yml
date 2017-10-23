@@ -38,7 +38,17 @@ matrix:
     # -------------------------------------
     # Standard
     
-    # ruby 5.0  Jun. 2016
+    # rails 5.1  Apr 2017
+    
+    - rvm: 2.4.1
+      gemfile: test/rails_5.1.gemfile
+      env: RAILS_VERSION=5.1 MIDDLEWARE=no
+
+    - rvm: 2.2.2
+      gemfile: test/rails_5.1.gemfile
+      env: RAILS_VERSION=5.1 MIDDLEWARE=no
+
+    # rails 5.0  Jun. 2016
     
     - rvm: 2.3.1
       gemfile: test/rails_5.0.gemfile
@@ -104,7 +114,16 @@ matrix:
       gemfile: test/rails_edge.gemfile
       env: RAILS_VERSION=edge MIDDLEWARE=YES
 
-    # ruby 5.0  Jun. 2016
+    # rails 5.1  Apr 2017
+    
+    - rvm: 2.4.1
+      gemfile: test/rails_5.1.gemfile
+      env: RAILS_VERSION=5.1 MIDDLEWARE=YES
+
+    - rvm: 2.2.2
+      gemfile: test/rails_5.1.gemfile
+      env: RAILS_VERSION=5.1 MIDDLEWARE=YES
+    # rails 5.0  Jun. 2016
     
     - rvm: 2.3.1
       gemfile: test/rails_5.0.gemfile
