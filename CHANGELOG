@@ -1,5 +1,7 @@
 = Change Log =
 
+ * Add rails 5.1 tests
+
 * 2.7.0
  * Add ability to check health of redis when url is non-standard redis url
 * 2.6.0
